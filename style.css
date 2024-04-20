@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.search {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.search button {
+  margin-left: 1rem;
+}
+
+.display {
+  height: calc(100vh - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+.card {
+  border-radius: 18px;
+  background: #e0e0e0;
+  box-shadow: 28px 28px 55px #bebebe, -28px -28px 55px #ffffff;
+  height: 40rem;
+  width: 30rem;
+}
