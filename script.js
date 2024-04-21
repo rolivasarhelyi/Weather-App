@@ -2,13 +2,14 @@
 
 const apiKey = config.MY_KEY;
 const button = document.querySelector(".btn");
+const cityText = document.querySelector(".city-name");
 const paragraph = document.querySelector("p");
 
 function getInput() {
-  const input = document.querySelector("input").value;
-
+  const inputCity = document.querySelector("input").value;
+  cityText.innerText = inputCity;
   fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${input}&appid=${config.MY_KEY}`
+    `http://api.openweathermap.org/geo/1.0/direct?q=${inputCity}&appid=${config.MY_KEY}`
   )
     .then((res) => res.json())
     .then((data) => {
@@ -22,6 +23,7 @@ function getInput() {
       )
         .then((res) => res.json())
         .then((data) => {
+          console.log(data);
           const description = data.weather[0].description;
           paragraph.innerText = description;
         });

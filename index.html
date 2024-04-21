@@ -10,14 +10,17 @@
   </head>
   <body>
     <section class="search">
-      <input
-        type="text"
-        name="input"
-        id="input"
-        class="input-text"
-        placeholder="Enter a city..."
-      />
-      <button class="btn">Get Weather</button>
+      <div class="text-search">
+        <input type="text" name="input" id="input" class="input-text" />
+        <span class="text-search__label"> Enter a city</span>
+      </div>
+
+      <button class="btn">
+        <span class="btn__text">Get Weather</span>
+        <span class="btn__icon"
+          ><ion-icon name="flash-outline"></ion-icon
+        ></span>
+      </button>
     </section>
     <main class="display">
       <div class="card">
@@ -26,5 +29,14 @@
         <div class="card-bottom"><p>additional info</p></div>
       </div>
     </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
