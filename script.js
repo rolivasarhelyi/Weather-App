@@ -23,11 +23,11 @@ function getInput() {
       )
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
+          console.log();
           const description = data.weather[0].description;
           paragraph.innerText = description;
         });
     });
 }
 
-button.addEventListener("click", getInput);
+// button.addEventListener("click", getInput);
