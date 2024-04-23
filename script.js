@@ -30,4 +30,4 @@ function getInput() {
     });
 }
 
-// button.addEventListener("click", getInput);
+button.addEventListener("click", getInput);
