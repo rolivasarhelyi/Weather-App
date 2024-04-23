@@ -1,6 +1,6 @@
 "use strict";
 
-const apiKey = config.MY_KEY;
+const apiKey = "ba9f75ce4c831746e5c1aea8c5620660";
 const button = document.querySelector(".btn");
 const cityText = document.querySelector(".city-name");
 const cardTemp = document.querySelector(".card-bottom__temp");
