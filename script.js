@@ -19,7 +19,7 @@ function getInput() {
     welcome.classList.add("hidden");
     card.classList.remove("hidden");
     fetch(
-      `https://api.openweathermap.org/geo/1.0/direct?q=${inputCity}&appid=${config.MY_KEY}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${inputCity}&appid=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -29,7 +29,7 @@ function getInput() {
         console.log(lat, lon);
 
         return fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${config.MY_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`
         )
           .then((res) => res.json())
           .then((data) => {
