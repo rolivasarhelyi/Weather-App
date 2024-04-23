@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/broken clouds.png" />
     <script type="text/javascript" src="config.js"></script>
     <script src="script.js" defer></script>
     <title>Get Weather App</title>
@@ -22,11 +23,25 @@
         ></span>
       </button>
     </section>
+
     <main class="display">
-      <div class="card">
+      <span class="welcome-message"
+        >Hi👋 Please enter a city name to get the current weather
+        information!</span
+      >
+      <div class="card hidden">
         <div class="card-top"><h1 class="city-name">City Name</h1></div>
-        <div class="card-mid"><img src="" alt="image" /></div>
-        <div class="card-bottom"><p>additional info</p></div>
+        <div class="card-mid">
+          <img
+            src="images/broken clouds.png"
+            alt="image"
+            class="card-mid__img"
+          />
+        </div>
+        <div class="card-bottom">
+          <p class="card-bottom__temp">Temp</p>
+          <p class="card-bottom__desc">Cloudy</p>
+        </div>
       </div>
     </main>
 
