@@ -44,6 +44,8 @@ function getInput() {
       })
       .catch((err) => {
         alert("Please enter a valid city name");
+        card.classList.add("hidden");
+        welcome.classList.remove("hidden");
       });
     document.querySelector("input").value = "";
   }
